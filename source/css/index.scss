@@ -1,0 +1,89 @@
+@import 'mrt_base';
+
+a {
+  text-decoration: none;
+  color: $green;
+
+  &:hover, &:focus, &:active {
+    color: darken($green, 10%);
+  }
+}
+
+p, a, h1, h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+#header-area {
+  padding: 20px 40px;
+  background-image: url('img/pw_maze_white.png');
+  background-repeat: repeat;
+
+  h1, h2, h3 {
+    display: inline;
+    color: #3F3F3F;
+  }
+
+  .after-light {
+    margin-left: 10px;
+    font-weight: 300;
+    color: rgb(170, 170, 170);
+  }
+}
+
+#content-container {
+  margin: auto;
+  max-width: 800px;
+  padding: 0 15px;
+}
+
+#profile-image-container {
+  img {
+    float: right;
+    margin: 10px;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+}
+
+#subheader {
+  margin-top: 10px;
+
+  li {
+    display: inline-block;
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  #header-area {
+    padding: 10px;
+    text-align: center;
+
+    h1 {
+      font-size: 1.6em;
+      display: block;
+      margin: 0;
+    }
+
+    .after-light {
+      margin-left: 0;
+    }
+  }
+
+  #subheader {
+    li {
+      display: inline-block;
+      margin-left: 10px
+    }
+  }
+
+  #profile-image-container img {
+    height: 100px;
+  }
+}
