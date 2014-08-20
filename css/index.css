@@ -41,7 +41,7 @@ p, a, h1, h2 {
 /* line 16, ../css/index.scss */
 #header-area {
   padding: 20px 40px;
-  background-image: url("img/pw_maze_white.png");
+  background-image: url("../img/pw_maze_white.png");
   background-repeat: repeat; }
   /* line 21, ../css/index.scss */
   #header-area h1, #header-area h2, #header-area h3 {
